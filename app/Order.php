@@ -10,7 +10,7 @@ class Order extends Model
 
     public function goods()
     {
-    	return this->belogsTo('App\Good','goodId');
+    	return $this->belogsTo('App\Good','goodId');
     }
 
     public function order_user()
